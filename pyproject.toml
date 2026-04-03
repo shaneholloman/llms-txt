@@ -33,4 +33,5 @@ version = {attr = "llms_txt.__version__"}
 include = ["llms_txt"]
 
 [tool.nbdev]
+allowed_cell_metadata_keys = ["solveit_ai"]
 custom_sidebar = true
