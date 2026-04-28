@@ -33,6 +33,6 @@ version = {attr = "llms_txt.__version__"}
 include = ["llms_txt"]
 
 [tool.nbdev]
-allowed_metadata_keys = ['solveit_dialog_mode', 'solveit_ver']
-allowed_cell_metadata_keys = ["solveit_ai"]
+allowed_metadata_keys = ['solveit']
+allowed_cell_metadata_keys = ['solveit_ai']
 custom_sidebar = true
