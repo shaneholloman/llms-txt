@@ -115,13 +115,13 @@ parsed = parse_llms_file(samp)
 
 Both approaches read your `llms.txt` file and retrieve the linked content. This is the process that takes your `llms.txt` and turns it into `llms-ctx.txt` and `llms-ctx-full.txt`.
 
-But there is another very exciting library --- [pysymbol-llm](https://github.com/AnswerDotAI/pysymbol-llm) --- that will allow us to add even more useful information in an automated way.
+But there is another very exciting library --- [pysym2md](https://github.com/AnswerDotAI/pysym2md) --- that will allow us to add even more useful information in an automated way.
 
 ## Enhancing context with API reference
 
 While LLMs generally understand high-level concepts, they often struggle with implementation details, especially when their training data is outdated. Providing a comprehensive list of your library's symbols - functions, classes, and their documentation - helps bridge this gap.
 
-This is where the [pysymbol-llm](https://github.com/AnswerDotAI/pysymbol-llm) library enters the picture. It generates a complete API reference in Markdown, extracting existing docstrings along the way.
+This is where the [pysym2md](https://github.com/AnswerDotAI/pysym2md) library enters the picture. It generates a complete API reference in Markdown, extracting existing docstrings along the way.
 
 This is a short excerpt from the [apilist.txt](https://fastcore.fast.ai/apilist.txt) for `fastcore`:
 
@@ -158,7 +158,7 @@ The final step is to configure your nbdev project to generate and serve these co
 
 2. Add the required dependencies to `settings.ini`:
 ```
-dev_requirements = pysymbol_llm llms-txt
+dev_requirements = pysym2md llms-txt
 ```
 3. Configure Quarto's build process in `nbs/_quarto.yml`:
 ```
